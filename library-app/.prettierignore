@@ -1,0 +1,3 @@
+# Ignore localization folder:
+src/assets/i18n
+src/environments/version.ts

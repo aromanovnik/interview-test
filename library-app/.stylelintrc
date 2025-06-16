@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss"
+  ],
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "rules": {
+    "no-empty-source": null,
+    "scss/dollar-variable-empty-line-before": null,
+    "color-hex-length": null,
+    "selector-class-pattern": [
+      "^([a-z][a-z0-9]*)(?:__(?:[a-z0-9]+(?:-[a-z0-9]+)*))?(?:--?[a-z0-9]+(?:-[a-z0-9]+)*)?$",
+      {
+        "message": "Expected class selector to follow BEM (block, block__element, block--modifier, block_modifier)"
+      }
+    ],
+    "selector-pseudo-element-no-unknown": [
+      true,
+      {
+        "ignorePseudoElements": ["ng-deep"]
+      }
+    ]
+  }
+}

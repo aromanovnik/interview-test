@@ -1,0 +1,127 @@
+@use 'mixins-media' as media;
+
+$screen-padding: 64px;
+$full-content-columns: 12;
+$content-columns: 11;
+$sidebar-columns: 1;
+$content-columns-expanded: 10;
+$sidebar-columns-expanded: 2;
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  padding: 0 $screen-padding;
+  grid-template-columns: repeat($full-content-columns, 1fr);
+
+  &__full-content {
+    grid-column: span $full-content-columns;
+  }
+
+  &__sidebar {
+    grid-column: span $sidebar-columns;
+  }
+
+  &__main-content {
+    grid-column: span $content-columns;
+  }
+
+  &_expanded {
+    .grid__sidebar {
+      grid-column: span $sidebar-columns-expanded;
+    }
+
+    .grid__main-content {
+      grid-column: span $content-columns-expanded;
+    }
+  }
+}
+
+@include media.small-desktop-view {
+  $screen-padding: 56px;
+
+  .grid {
+    padding: 0 $screen-padding;
+  }
+}
+
+@include media.tablet-view {
+  $screen-padding: 48px;
+
+  .grid {
+    padding: 0 $screen-padding;
+  }
+}
+
+@include media.big-phone-view {
+  $screen-padding: 24px;
+  $full-content-columns: 8;
+  $content-columns: 7;
+  $sidebar-columns: 1;
+  $content-columns-expanded: 6;
+  $sidebar-columns-expanded: 2;
+
+  .grid {
+    padding: 0 $screen-padding;
+    grid-template-columns: repeat($full-content-columns, 1fr);
+
+    &__full-content {
+      grid-column: span $full-content-columns;
+    }
+
+    &__sidebar {
+      grid-column: span $sidebar-columns;
+    }
+
+    &__main-content {
+      grid-column: span $content-columns;
+    }
+
+    &_expanded {
+      .grid__sidebar {
+        grid-column: span $sidebar-columns-expanded;
+      }
+
+      .grid__main-content {
+        grid-column: span $content-columns-expanded;
+      }
+    }
+  }
+}
+
+@include media.small-phone-view {
+  $screen-padding: 16px;
+  $full-content-columns: 4;
+  $content-columns: 4;
+  $sidebar-columns: 4;
+  $content-columns-expanded: 4;
+  $sidebar-columns-expanded: 4;
+
+  .grid {
+    display: grid;
+    gap: 1rem;
+    padding: 0 $screen-padding;
+    grid-template-columns: repeat($full-content-columns, 1fr);
+
+    &__full-content {
+      grid-column: span $full-content-columns;
+    }
+
+    &__sidebar {
+      grid-column: span $sidebar-columns;
+    }
+
+    &__main-content {
+      grid-column: span $content-columns;
+    }
+
+    &_expanded {
+      .grid__sidebar {
+        grid-column: span $sidebar-columns-expanded;
+      }
+
+      .grid__main-content {
+        grid-column: span $content-columns-expanded;
+      }
+    }
+  }
+}
