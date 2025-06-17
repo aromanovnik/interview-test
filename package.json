@@ -1,0 +1,14 @@
+{
+  "name": "interview-test",
+  "version": "1.0.0",
+  "description": "Привет! Спасибо за интерес к нашей компании. Ниже — тестовое задание, которое поможет нам оценить твои навыки в JavaScript и Angular.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "author": "Aleksey Romanov",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^9.1.7"
+  }
+}
