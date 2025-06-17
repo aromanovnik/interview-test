@@ -1,0 +1,2 @@
+cd library-app
+npx lint-staged
