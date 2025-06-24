@@ -16,6 +16,8 @@
           "ng-deep"
         ]
       }
-    ]
+    ],
+    "keyframes-name-pattern": null,
+    "selector-id-pattern": null
   }
 }

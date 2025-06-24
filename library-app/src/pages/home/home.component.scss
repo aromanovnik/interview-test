@@ -1,0 +1,94 @@
+@use 'colors.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#book_page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--blue-gradient-1200);
+  min-height: 100vh;
+  color: var(--grey-1200);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Table Container */
+.table-container {
+  background: rgb(255 255 255 / 95%);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 32px rgb(0 0 0 / 10%);
+  overflow: hidden;
+}
+
+.table-header {
+  margin-bottom: 20px;
+  color: var(--grey-900);
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--blue-reverso-100);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgb(0 0 0 / 5%);
+}
+
+th {
+  background: linear-gradient(135deg, var(--blue-reverso-500), var(--purple-rephrase-900));
+  color: var(--blue-reverso-100);
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+td {
+  padding: 15px;
+  border-bottom: 1px solid var(--blue-reverso-100);
+  transition: background-color 0.2s ease;
+}
+
+tr:hover td {
+  background-color: var(--black-300);
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  margin: 0 2px;
+  transition: all 0.2s ease;
+  font-size: 1.1em;
+}
+
+.edit-btn {
+  color: var(--accent-700);
+}
+
+.edit-btn:hover {
+  background-color: var(--accent-400);
+  transform: scale(1.1);
+}
+
+.delete-btn {
+  color: var(--red-reverso-700);
+}
+
+.delete-btn:hover {
+  background-color: var(--red-reverso-300);
+  transform: scale(1.1);
+}

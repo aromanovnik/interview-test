@@ -1,0 +1,36 @@
+<!-- Modal Dialog -->
+<div class="modal-overlay" id="modalOverlay" [ngStyle]="{ display: isVisible ? 'flex' : 'none' }">
+  <div class="modal">
+    <h2 id="modalTitle">
+      {{ isVisible ? 'Add New Book' : '' }}
+    </h2>
+    <form id="bookForm" [formGroup]="form" (ngSubmit)="onSubmit($event)">
+      <div class="form-group">
+        <label for="authorInput">Author Name</label>
+        <input formControlName="book_author" type="text" id="authorInput" required />
+      </div>
+      <div class="form-group">
+        <label for="bookNameInput">Book Name</label>
+        <input formControlName="book_name" type="text" id="bookNameInput" required />
+      </div>
+      <div class="form-group">
+        <label for="bookNameInput">Book Year</label>
+        <input formControlName="book_year" type="number" min="1900" max="2025" id="bookYearInput" />
+      </div>
+      <div class="form-group">
+        <label for="bookNameInput">Book Pages</label>
+        <input
+          formControlName="book_pages"
+          type="number"
+          min="100"
+          max="1000"
+          id="bookPagesInput"
+        />
+      </div>
+      <div class="modal-buttons">
+        <button type="submit" class="btn btn-primary">Save Book</button>
+        <button type="button" class="btn btn-secondary" (click)="closeModal()">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>

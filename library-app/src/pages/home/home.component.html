@@ -1,1 +1,31 @@
-<p>home works!</p>
+<div id="book_page">
+  <div class="container">
+    <app-top-bar />
+    <!-- Table Container -->
+    <div class="table-container">
+      <div class="table-header">📖 Book Library</div>
+      <table id="booksTable">
+        <thead>
+          <tr>
+            <th>Автор</th>
+            <th>Наименование</th>
+            <th>Действие</th>
+          </tr>
+        </thead>
+        <tbody id="booksTableBody">
+          <tr>
+            <td>J.K. Rowling</td>
+            <td>Harry Potter and the Philosopher's Stone</td>
+            <td>
+              <button class="action-btn edit-btn" onclick="editBook(this)" title="Edit">✏️</button>
+              <button class="action-btn delete-btn" onclick="deleteBook(this)" title="Delete">
+                🗑️
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <app-modal-add-book />
+  </div>
+</div>
