@@ -1,1 +1,41 @@
-<p>home works!</p>
+<div id="book-page">
+  <div class="container">
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <h1>
+        <div class="book-icon">📚</div>
+        Book Админ Панель
+      </h1>
+      <button class="add-book-btn" (click)="openForm()">
+        <span>+</span>
+        Добавить новую книгу
+      </button>
+    </div>
+    <!-- Table Container -->
+    <div class="table-container">
+      <div class="table-header">📖 Список книг</div>
+      <table id="booksTable">
+        <thead>
+          <tr>
+            <th>Автор</th>
+            <th>Наименование</th>
+            <th>Действие</th>
+          </tr>
+        </thead>
+        <tbody id="booksTableBody">
+          <tr *ngFor="let book of books()">
+            <td>{{ book.book_author }}</td>
+            <td>{{ book.book_name }}</td>
+            <td>
+              <button class="action-btn edit-btn" (click)="openForm(book)" title="Edit">✏️</button>
+              <button class="action-btn delete-btn" (click)="remove(book.id)" title="Delete">
+                🗑️
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <app-modal-add-book [modalOpen]="modalOpen" [book]="selected" (close)="closeForm()" />
+  </div>
+</div>
