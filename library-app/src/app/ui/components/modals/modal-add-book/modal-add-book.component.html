@@ -1,35 +1,58 @@
 <!-- Modal Dialog -->
-<div class="modal-overlay" id="modalOverlay" [ngStyle]="{ display: isVisible ? 'flex' : 'none' }">
+<div class="modal-overlay" id="modalOverlay" [style.display]="modalOpen ? 'flex' : 'none'">
   <div class="modal">
-    <h2 id="modalTitle">
-      {{ isVisible ? 'Add New Book' : '' }}
-    </h2>
-    <form id="bookForm" [formGroup]="form" (ngSubmit)="onSubmit($event)">
+    <h2 id="modalTitle">{{ book ? 'Редактировать' : 'Добавить' }} книгу</h2>
+    <form id="bookForm">
       <div class="form-group">
-        <label for="authorInput">Author Name</label>
-        <input formControlName="book_author" type="text" id="authorInput" required />
-      </div>
-      <div class="form-group">
-        <label for="bookNameInput">Book Name</label>
-        <input formControlName="book_name" type="text" id="bookNameInput" required />
-      </div>
-      <div class="form-group">
-        <label for="bookNameInput">Book Year</label>
-        <input formControlName="book_year" type="number" min="1900" max="2025" id="bookYearInput" />
-      </div>
-      <div class="form-group">
-        <label for="bookNameInput">Book Pages</label>
+        <label for="book_author">Автор</label>
         <input
-          formControlName="book_pages"
+          type="text"
+          id="book_author"
+          [(ngModel)]="form.book_author"
+          name="book_author"
+          placeholder="Автор"
+          appAutoFocus
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="bookNameInput">Название</label>
+        <input
+          type="text"
+          id="bookNameInput"
+          [(ngModel)]="form.book_name"
+          name="book_name"
+          placeholder="Название"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="bookNameInput">Год издание</label>
+        <input
+          type="number"
+          id="bookYearInput"
+          min="1900"
+          max="2025"
+          [(ngModel)]="form.book_year"
+          name="book_year"
+          placeholder="Год"
+        />
+      </div>
+      <div class="form-group">
+        <label for="bookNameInput">Количество страницы</label>
+        <input
           type="number"
           min="100"
           max="1000"
           id="bookPagesInput"
+          [(ngModel)]="form.book_pages"
+          name="book_pages"
+          placeholder="Страниц"
         />
       </div>
       <div class="modal-buttons">
-        <button type="submit" class="btn btn-primary">Save Book</button>
-        <button type="button" class="btn btn-secondary" (click)="closeModal()">Cancel</button>
+        <button type="submit" class="btn btn-primary" (click)="save()">Сохранить</button>
+        <button type="button" class="btn btn-secondary" (click)="close.emit()">Отменить</button>
       </div>
     </form>
   </div>
