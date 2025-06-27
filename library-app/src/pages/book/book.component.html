@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="book-buttons">
+    <button class="button button-tertiary" (click)="showModal = !showModal">Add book</button>
+    <div class="book-size">Books shown: {{ visibleBooks().length }}</div>
+  </div>
+
+  <div class="book-list">
+    @for (book of visibleBooks(); track book.id) {
+      <div class="book-item" [appBestseller]="book.title === '1984' || book.title === 'Fight Club'">
+        <div class="book-cover">
+          @if (book.cover) {
+            <img [src]="book.cover" alt="Cover" />
+          } @else {
+            <div class="default">Cover Coming Soon</div>
+          }
+        </div>
+        <div class="book-presentation">
+          <div class="book-info">
+            <div class="book-title">{{ book.title | bestseller }}</div>
+            <div class="book-author">{{ book.author }}</div>
+          </div>
+          <div class="book-actions">
+            <button class="button button-primary button-sm" (click)="openEditModal(book)">
+              Edit
+            </button>
+            <button class="button button-secondary button-sm" (click)="onRemove(book.id)">
+              Remove
+            </button>
+          </div>
+        </div>
+      </div>
+    }
+    <div #observerTarget></div>
+  </div>
+</div>
+
+@if (showModal) {
+  <app-book-modal
+    [bookToEdit]="selectedBook"
+    (closeModal)="showModal = false; selectedBook = null"
+  />
+}

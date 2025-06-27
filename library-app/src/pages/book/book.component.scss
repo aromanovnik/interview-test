@@ -1,0 +1,104 @@
+@import '../../assets/themes/colors.css';
+@import '../../assets/themes/buttons.scss';
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .book-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .book-size {
+      color: var(--purple-rephrase-900);
+      font-size: calc(0.75em + 1vmin);
+    }
+  }
+
+  .bestseller {
+    background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+  }
+
+  .book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+
+    .book-item {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      background-color: var(--new-blue-100);
+      transform: scale(1);
+      transition: all 0.3s ease;
+      backface-visibility: hidden;
+      border: 1px solid transparent;
+
+      &:hover {
+        border: 1px solid #e2e6ea;
+      }
+
+      .book-presentation {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+        justify-content: space-around;
+
+        .book-actions {
+          display: flex;
+          gap: 10px;
+        }
+      }
+
+      .book-cover {
+        height: 210px;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 150px;
+          height: 100%;
+          image-rendering: auto;
+        }
+
+        .default {
+          background-color: #f0f0f0;
+          width: 150px;
+          height: 100%;
+          color: #333333;
+          font-size: 25px;
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+          border: 2px solid #8080806b;
+          display: flex;
+        }
+      }
+
+      .book-info {
+        display: flex;
+        flex-direction: column;
+
+        .book-title {
+          font-weight: bold;
+          font-size: 18px;
+        }
+
+        .book-author {
+          font-size: 14px;
+          color: var(--grey-1100);
+        }
+      }
+    }
+  }
+
+  .scroll-sentinel {
+    height: 1px;
+  }
+}

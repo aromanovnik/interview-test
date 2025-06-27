@@ -1,0 +1,88 @@
+$primary-color: var(--new-blue-700);
+$primary-hover: var(--new-blue-800);
+$primary-text: #ffffff;
+
+$secondary-color: #f0f0f0;
+$secondary-hover: #e2e2e2;
+$secondary-text: #333;
+
+$tertiary-color: var(--purple-rephrase-700);
+$tertiary-hover: var(--purple-rephrase-700);
+$tertiary-text: #ffffff;
+
+$disabled-bg: #cccccc;
+$disabled-text: #888;
+
+// 🔘 Общий стиль кнопки
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.15s ease;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+
+  // &:hover {
+  //   transform: scale(1.02);
+  // }
+
+  // &:active {
+  //   transform: scale(0.98);
+  // }
+
+  &:disabled {
+    background-color: $disabled-bg;
+    color: $disabled-text;
+    cursor: not-allowed;
+    transform: none;
+  }
+}
+
+// 🔵 Вариант: Primary
+.button-primary {
+  background-color: $primary-color;
+  color: $primary-text;
+
+  &:hover {
+    background-color: $primary-hover;
+  }
+}
+
+// ⚪ Вариант: Secondary
+.button-secondary {
+  background-color: $secondary-color;
+  color: $secondary-text;
+
+  &:hover {
+    background-color: $secondary-hover;
+  }
+}
+
+.button-tertiary {
+  background-color: $tertiary-color;
+  color: $tertiary-text;
+
+  &:hover {
+    background-color: $tertiary-hover;
+  }
+}
+
+// 🔹 Размеры
+.button-sm {
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+.button-lg {
+  padding: 14px 28px;
+  font-size: 18px;
+}

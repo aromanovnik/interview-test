@@ -1,0 +1,83 @@
+<div
+  class="modal-backdrop"
+  role="button"
+  tabindex="0"
+  aria-label="Закрыть модальное окно"
+  (click)="close()"
+  (keydown.enter)="close()"
+  (keydown.space)="close()"
+></div>
+<div class="modal">
+  <h2>{{ bookToEdit ? 'Edit Book' : 'Add Book' }}</h2>
+
+  <form class="modal-form" #bookForm="ngForm" (ngSubmit)="onSubmit(bookForm)">
+    <div>
+      <label for="title">Title<span class="red">*</span></label>
+      <input
+        [(ngModel)]="book.title"
+        id="title"
+        name="title"
+        placeholder="Title"
+        type="text"
+        required
+      />
+    </div>
+    <div>
+      <label for="author">Author<span class="red">*</span></label>
+      <input
+        [(ngModel)]="book.author"
+        id="author"
+        name="author"
+        placeholder="Author"
+        type="text"
+        required
+      />
+    </div>
+    <div>
+      <label for="cover">Cover</label>
+      <input
+        [(ngModel)]="book.cover"
+        id="cover"
+        type="url"
+        name="cover"
+        placeholder="https://example.com"
+        pattern="https://.*"
+      />
+    </div>
+    <div>
+      <label for="year">Year<span class="red">*</span></label>
+      <input
+        [(ngModel)]="book.year"
+        id="year"
+        name="year"
+        placeholder="Year"
+        type="number"
+        required
+      />
+    </div>
+    <div>
+      <label for="pages">Pages<span class="red">*</span></label>
+      <input
+        [(ngModel)]="book.pages"
+        id="pages"
+        name="pages"
+        placeholder="Pages"
+        type="number"
+        required
+      />
+    </div>
+
+    <div class="actions">
+      <button
+        class="button button-primary button-sm"
+        [disabled]="bookForm.invalid || !bookForm.dirty"
+        type="submit"
+      >
+        Submit
+      </button>
+      <button class="button button-secondary button-sm" type="button" (click)="close()">
+        Cancel
+      </button>
+    </div>
+  </form>
+</div>
