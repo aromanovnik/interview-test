@@ -1,0 +1,57 @@
+@import '../../../assets/themes/buttons.scss';
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgb(0 0 0 / 50%);
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: clamp(250px, 50%, 500px);
+  padding: 20px;
+  background: white;
+  justify-items: center;
+  border-radius: 8px;
+  transform: translate(-50%, -50%);
+
+  &-form {
+    width: 85%;
+  }
+}
+
+input {
+  width: 320px;
+  margin-bottom: 10px;
+  padding: 6px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+input,
+select,
+textarea {
+  border: 2px solid gray;
+  padding: 6px;
+  margin: 6px 0;
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  outline: none;
+}
+
+.red {
+  color: red;
+}
