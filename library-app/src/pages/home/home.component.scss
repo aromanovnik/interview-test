@@ -1,0 +1,83 @@
+.add-button {
+  margin-bottom: 1.5rem;
+  background-color: var(--new-blue-900);
+  color: var(--black-0);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: var(--new-blue-1000);
+  }
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.book-card {
+  background-color: var(--black-0);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 180px;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.book-card__content {
+  flex-grow: 1;
+}
+
+.book-card__title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--black-1000);
+  margin-bottom: 0.3rem;
+}
+
+.book-card__author {
+  font-size: 0.95rem;
+  color: var(--black-800);
+}
+
+.book-card__meta {
+  font-size: 0.85rem;
+  color: var(--black-600);
+  margin-top: 0.5rem;
+}
+
+.book-card__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.book-card__actions button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--black-600);
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: var(--new-blue-900);
+  }
+
+  &:last-child:hover {
+    color: var(--red-reverso-700);
+  }
+}

@@ -1,1 +1,25 @@
-<p>home works!</p>
+<h1>📚 Моя библиотека</h1>
+
+<button class="add-button" (click)="openModal()">➕ Добавить книгу</button>
+
+<div class="book-grid">
+  <div *ngFor="let book of books()" class="book-card">
+    <div class="book-card__content">
+      <div class="book-card__title">{{ book.title }}</div>
+      <div class="book-card__author">{{ book.author }}</div>
+      <div class="book-card__meta">📖 {{ book.pages }} стр. — {{ book.year }}</div>
+    </div>
+
+    <div class="book-card__actions">
+      <button (click)="openModal(book)" title="Редактировать">✏</button>
+      <button (click)="removeBook(book.id)" title="Удалить">🗑</button>
+    </div>
+  </div>
+</div>
+
+<app-book-modal
+  *ngIf="modalOpen()"
+  [book]="editBook()"
+  (save)="saveBook($event)"
+  (cancel)="closeModal()"
+/>
