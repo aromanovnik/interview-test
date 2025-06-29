@@ -1,0 +1,12 @@
+<mat-card>
+    <mat-card-title>{{ book.title }}</mat-card-title>
+    <mat-card-content>{{ book.author }}</mat-card-content>
+  
+    <button
+        mat-raised-button
+        color="warn"
+        (click)="onDeleteConfirmed(); $event.stopPropagation();">
+        Delete
+        </button>
+  </mat-card>
+  

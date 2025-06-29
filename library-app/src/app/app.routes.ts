@@ -6,5 +6,9 @@ export const routes: Routes = [
     path: '',
     component: HomeComponent,
   },
-  { path: '**', redirectTo: '' },
+  {
+    path: 'books',
+    loadComponent: () =>
+      import('@pages/books/books.component').then(m => m.BooksComponent),
+  }
 ];

@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "author": "Haruki Murakami",
+      "title": "Kafka on the Shore",
+      "date": "2002-09-12",
+      "pages": 505
+    },
+    {
+      "id": 2,
+      "author": "Margaret Atwood",
+      "title": "The Handmaid's Tale",
+      "date": "1985-04-15",
+      "pages": 324
+    },
+    {
+      "id": 3,
+      "author": "George Orwell",
+      "title": "1984",
+      "date": "1949-06-08",
+      "pages": 328
+    },
+    {
+      "id": 4,
+      "author": "Chimamanda Ngozi Adichie",
+      "title": "Half of a Yellow Sun",
+      "date": "2006-10-03",
+      "pages": 448
+    },
+    {
+      "id": 5,
+      "author": "J.K. Rowling",
+      "title": "Harry Potter and the Prisoner of Azkaban",
+      "date": "1999-07-08",
+      "pages": 435
+    },
+    {
+      "id": 6,
+      "author": "Fyodor Dostoevsky",
+      "title": "Crime and Punishment",
+      "date": "1866-01-01",
+      "pages": 671
+    },
+    {
+      "id": 7,
+      "author": "Leo Tolstoy",
+      "title": "War and Peace",
+      "date": "1869-01-01",
+      "pages": 1225
+    },
+    {
+      "id": 8,
+      "author": "Jane Austen",
+      "title": "Pride and Prejudice",
+      "date": "1813-01-28",
+      "pages": 279
+    },
+    {
+      "id": 9,
+      "author": "Gabriel García Márquez",
+      "title": "One Hundred Years of Solitude",
+      "date": "1967-05-30",
+      "pages": 417
+    },
+    {
+      "id": 10,
+      "author": "Albert Camus",
+      "title": "The Stranger",
+      "date": "1942-06-01",
+      "pages": 123
+    }
+  ]
+  

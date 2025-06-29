@@ -1,0 +1,18 @@
+<h2 mat-dialog-title>{{ book ? 'Edit' : 'Add' }} Book</h2>
+<mat-dialog-content>
+  <form [formGroup]="form">
+    <mat-form-field>
+      <mat-label>Title</mat-label>
+      <input matInput formControlName="title">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Author</mat-label>
+      <input matInput formControlName="author">
+    </mat-form-field>
+    
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions style="display: flex; gap: 12px;">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button (click)="save()" [disabled]="form.invalid">Save</button>
+</mat-dialog-actions>
