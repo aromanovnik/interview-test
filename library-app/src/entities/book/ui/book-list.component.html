@@ -1,0 +1,11 @@
+<mat-toolbar>
+    <span>Books</span>
+    <button mat-icon-button (click)="openModal()"><mat-icon>add</mat-icon></button>
+</mat-toolbar>
+  
+<app-book-card
+    *ngFor="let book of books$ | async"
+    [book]="book"
+    (click)="openModal(book)"
+    (delete)="deleteBook(book)"
+    ></app-book-card>

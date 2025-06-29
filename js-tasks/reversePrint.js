@@ -13,7 +13,20 @@ const someList = {
 };
 
 function reversePrint(linkedList) {
-  // ...
+
+  const stack = []
+  let current = linkedList
+  
+  do {
+    stack.push(current.value)
+    current = current.next
+  }
+  while( current );
+
+  while( stack.length ) {
+    console.log('[linkedList value]: ', stack.pop());
+  }
+
 }
 
 reversePrint(someList);
