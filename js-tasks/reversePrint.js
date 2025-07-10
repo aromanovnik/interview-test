@@ -13,7 +13,8 @@ const someList = {
 };
 
 function reversePrint(linkedList) {
-  // ...
+  if (linkedList.next) reversePrint(linkedList.next);
+  console.log(linkedList.value);
 }
 
-reversePrint(someList);
+reversePrint(someList); // 4, 3, 2, 1

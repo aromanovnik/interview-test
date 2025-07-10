@@ -1,1 +1,33 @@
-<p>home works!</p>
+<div class="grid">
+  <div class="grid__main-content">
+    <div class="home__header">
+      <h2 class="home__title">Список книг</h2>
+      <button class="home__add-btn" (click)="openAddModal()">Добавить книгу</button>
+    </div>
+
+    @if (books.length === 0) {
+      <div class="home__empty">Пока нет ни одной книги</div>
+    }
+
+    @for (book of books; track book.id) {
+      <li class="book-item">
+        <span class="book-title">
+          {{ book.author }} — <strong>{{ book.title }}</strong>
+        </span>
+        <div class="actions">
+          <button (click)="openEditModal(book.id)">✏</button>
+          <button (click)="removeBook(book.id)">🗑</button>
+        </div>
+      </li>
+    }
+  </div>
+</div>
+
+@if (showModal) {
+  <app-book-modal
+    [book]="editingBook"
+    (submitted)="handleModalSubmit($event)"
+    (closed)="handleModalClose()"
+  />
+}
+

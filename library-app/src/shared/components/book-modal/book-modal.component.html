@@ -1,0 +1,30 @@
+<div class="modal-backdrop">
+  <div class="modal">
+    <h3>{{ book ? 'Редактировать книгу' : 'Добавить книгу' }}</h3>
+
+    <label>
+      Автор:
+      <input [(ngModel)]="form.author" />
+    </label>
+
+    <label>
+      Название:
+      <input [(ngModel)]="form.title" />
+    </label>
+
+    <label>
+      Год издания:
+      <input type="number" [(ngModel)]="form.year" />
+    </label>
+
+    <label>
+      Кол-во страниц:
+      <input type="number" [(ngModel)]="form.pages" />
+    </label>
+
+    <div class="buttons">
+      <button (click)="save()">Сохранить</button>
+      <button (click)="cancel()">Отмена</button>
+    </div>
+  </div>
+</div>
