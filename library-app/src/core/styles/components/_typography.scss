@@ -1,0 +1,45 @@
+@use '../utils/typography-mixin';
+
+h1,
+.tp-heading-1 {
+  @include typography-mixin.typography(h1);
+}
+
+h2,
+.tp-heading-2 {
+  @include typography-mixin.typography(h2);
+}
+
+h3,
+.tp-heading-3 {
+  @include typography-mixin.typography(h3);
+}
+
+h4,
+.tp-heading-4 {
+  @include typography-mixin.typography(h4);
+}
+
+h5,
+.tp-heading-5 {
+  @include typography-mixin.typography(h5);
+}
+
+h6,
+.tp-heading-6 {
+  @include typography-mixin.typography(h6);
+}
+
+p,
+.tp-body-1 {
+  @include typography-mixin.typography(body-1);
+}
+
+.tp-body-2 {
+  @include typography-mixin.typography(body-2);
+}
+
+small,
+.tp-caption {
+  @include typography-mixin.typography(caption);
+}

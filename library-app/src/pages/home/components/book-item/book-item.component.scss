@@ -1,0 +1,14 @@
+:host {
+  padding: 8px;
+  display: block;
+
+  .info {
+    .title {
+      font-weight: bold;
+    }
+
+    .caption {
+      color: var(--black-1000);
+    }
+  }
+}

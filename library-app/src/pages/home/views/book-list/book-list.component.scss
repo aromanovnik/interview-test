@@ -1,0 +1,15 @@
+:host {
+  .list {
+    &__item {
+      transition: box-shadow 100ms;
+
+      &:hover {
+        box-shadow: 0 0 16px var(--black-200);
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid var(--black-300);
+      }
+    }
+  }
+}
