@@ -1,0 +1,73 @@
+{
+  "hash": "3e8d73b4",
+  "configHash": "65d27df3",
+  "lockfileHash": "cf9f9c54",
+  "browserHash": "6eea004d",
+  "optimized": {
+    "@angular/core": {
+      "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "a499f1a3",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "a43ada3e",
+      "needsInterop": false
+    },
+    "@angular/platform-server": {
+      "src": "../../../../../../node_modules/@angular/platform-server/fesm2022/platform-server.mjs",
+      "file": "@angular_platform-server.js",
+      "fileHash": "87583ea6",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "cb784576",
+      "needsInterop": false
+    },
+    "@angular/ssr": {
+      "src": "../../../../../../node_modules/@angular/ssr/fesm2022/ssr.mjs",
+      "file": "@angular_ssr.js",
+      "fileHash": "b51edc02",
+      "needsInterop": false
+    },
+    "@angular/ssr/node": {
+      "src": "../../../../../../node_modules/@angular/ssr/fesm2022/node.mjs",
+      "file": "@angular_ssr_node.js",
+      "fileHash": "2f271a7c",
+      "needsInterop": false
+    },
+    "express": {
+      "src": "../../../../../../node_modules/express/index.js",
+      "file": "express.js",
+      "fileHash": "7100e3f0",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-VA3ZYANU": {
+      "file": "chunk-VA3ZYANU.js"
+    },
+    "chunk-QZDOGQZS": {
+      "file": "chunk-QZDOGQZS.js"
+    },
+    "chunk-CC2MMYVW": {
+      "file": "chunk-CC2MMYVW.js"
+    },
+    "chunk-XT2MVUT4": {
+      "file": "chunk-XT2MVUT4.js"
+    },
+    "chunk-IIYVTTA6": {
+      "file": "chunk-IIYVTTA6.js"
+    },
+    "xhr2-ZIACK3JJ": {
+      "file": "xhr2-ZIACK3JJ.js"
+    },
+    "chunk-6DU2HRTW": {
+      "file": "chunk-6DU2HRTW.js"
+    }
+  }
+}
