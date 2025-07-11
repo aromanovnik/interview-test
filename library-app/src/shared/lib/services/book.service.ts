@@ -32,6 +32,23 @@ export class BookService {
     this._setBooks(books);
   }
 
+  public updateBook(id: number, data: BookData): void {
+    const books: BookItem[] = [...this._books.getValue()];
+    let index: number | null = null;
+    const book = books.find((item, itemIndex) => {
+      index = itemIndex;
+      return item.id === id;
+    });
+    if (index === null || book === undefined) return;
+
+    books[index] = {
+      ...book,
+      ...data,
+    };
+
+    this._setBooks(books);
+  }
+
   public removeBookById(id: number): void {
     const books: BookItem[] = [...this._books.getValue()];
 

@@ -1,8 +1,9 @@
-import { Component, computed, inject, input, InputSignal, output } from '@angular/core';
+import { Component, computed, inject, output } from '@angular/core';
 import { ButtonComponent } from '@shared/components/button/button.component';
 import { BookFormComponent } from '@pages/home/views/book-form/book-form.component';
 import { BookData } from '@pages/home/views/book-form/types';
-import { DialogRef } from '@angular/cdk/dialog';
+import { DIALOG_DATA, DialogRef } from '@angular/cdk/dialog';
+import { BookItem } from '@pages/home/components/book-item/types';
 
 @Component({
   selector: 'app-book-form-dialog',
@@ -12,13 +13,16 @@ import { DialogRef } from '@angular/cdk/dialog';
 })
 export class BookFormDialogComponent {
   private _dialogRef = inject(DialogRef);
+  private _dialogData: BookItem = inject(DIALOG_DATA);
 
-  public isUpdate: InputSignal<boolean> = input<boolean>(false);
+  public data = computed(() => {
+    return this._dialogData;
+  });
 
   public update = output<BookData>();
 
   public dialogTitle = computed(() => {
-    if (this.isUpdate()) return 'Update book data';
+    if (this.data()) return 'Update book data';
     else return 'Add new book';
   });
 

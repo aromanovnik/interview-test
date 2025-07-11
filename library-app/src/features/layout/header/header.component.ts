@@ -11,7 +11,7 @@ import { BookListService } from '@pages/home/views/book-list/book-list.service';
 export class HeaderComponent {
   private _bookListService: BookListService = inject(BookListService);
 
-  public openAddBookDialog() {
-    this._bookListService.openAddBookDialog();
+  public openBookFormDialog() {
+    this._bookListService.openBookFormDialog();
   }
 }

@@ -3,5 +3,5 @@
   <app-button (click)="close()">Close</app-button>
 </div>
 <div class="body">
-  <app-book-form [isUpdate]="isUpdate()" (update)="onUpdate($event)"></app-book-form>
+  <app-book-form [data]="data()" (update)="onUpdate($event)"></app-book-form>
 </div>
