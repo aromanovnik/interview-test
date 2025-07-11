@@ -1,6 +1,8 @@
 :host {
   padding: 8px;
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
 
   .info {
     .title {
@@ -10,5 +12,10 @@
     .caption {
       color: var(--black-1000);
     }
+  }
+
+  .actions {
+    display: flex;
+    gap: 8px;
   }
 }

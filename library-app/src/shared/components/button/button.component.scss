@@ -1,0 +1,42 @@
+:host {
+  .button {
+    height: 32px;
+    padding-inline: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: filter 50ms;
+
+    &:hover {
+      filter: brightness(0.95);
+    }
+
+    &:active {
+      filter: brightness(0.8);
+    }
+  }
+
+  // Themes
+  &.theme-base {
+    .button {
+      color: var(--black-1100);
+      background-color: var(--black-0);
+      border: 1px solid var(--black-400);
+    }
+  }
+
+  &.theme-accent {
+    .button {
+      color: var(--black-0);
+      background-color: var(--accent-700);
+      border: none;
+    }
+  }
+
+  &.theme-danger {
+    .button {
+      color: var(--black-0);
+      background-color: var(--red-reverso-800);
+      border: none;
+    }
+  }
+}
