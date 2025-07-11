@@ -4,7 +4,6 @@ function findUnique(arr) {
   const sortedArray = [...arr].sort((a, b) => a - b)
   const result = []
 
-
   for(let i = 1; i < sortedArray.length - 1; i++) {
     const prevNumber = sortedArray[i - 1];
     const currentNumber  = sortedArray[i];
