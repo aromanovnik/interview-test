@@ -1,4 +1,4 @@
-import { DOCUMENT, Location, isPlatformBrowser } from './chunk-JLGN6XDL.js';
+import { DOCUMENT, Location, isPlatformBrowser } from './chunk-KOPKEUDT.js';
 import {
   ANIMATION_MODULE_TYPE,
   APP_ID,

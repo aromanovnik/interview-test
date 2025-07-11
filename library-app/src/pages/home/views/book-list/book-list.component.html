@@ -1,5 +1,5 @@
 <ul class="list">
-  @for (book of items; track book.id) {
+  @for (book of items(); track book.id) {
     <li class="list__item">
       <app-book-item [data]="book"></app-book-item>
     </li>

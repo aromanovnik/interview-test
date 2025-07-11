@@ -1,6 +1,6 @@
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
-import { DOCUMENT, Location, isPlatformBrowser } from './chunk-HSHXRAZ3.js';
+import { DOCUMENT, Location, isPlatformBrowser } from './chunk-4TWIPHE5.js';
 import {
   ANIMATION_MODULE_TYPE,
   APP_ID,

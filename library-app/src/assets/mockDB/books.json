@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "author": "George R.R. Martin",
+    "title": "A Game of Thrones",
+    "totalPages": 400,
+    "year": 1996
+  },
+  {
+    "id": 2,
+    "author": "Ayn Rand",
+    "title": "Atlas Shrugged",
+    "totalPages": 1168,
+    "year": 1957
+  },
+  {
+    "id": 3,
+    "author": "John R.R. Tolkien",
+    "title": "The Lord of the Rings",
+    "totalPages": 600,
+    "year": 1954
+  }
+]
