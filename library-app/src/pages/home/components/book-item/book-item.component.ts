@@ -17,4 +17,8 @@ export class BookItemComponent {
   public onEdit() {
     this._bookListService.openBookFormDialog(this.data());
   }
+
+  public onRemove() {
+    this._bookListService.openBookRemoveConfirmationDialog(this.data());
+  }
 }
