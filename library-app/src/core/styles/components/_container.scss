@@ -45,11 +45,13 @@ $container-extra-small-phone: 100%;
 
   /* below 567 */
   @include mixins-media.small-phone-view {
+    padding: 0 8px;
     width: $container-small-phone;
   }
 
   /* below 375 */
   @include mixins-media.extra-small-phone-view {
+    padding: 0 4px;
     width: $container-extra-small-phone;
   }
 }
