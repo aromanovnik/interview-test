@@ -1,7 +1,7 @@
-<div class="dialog-header">
+<div class="header">
   <p>{{ dialogTitle() }}</p>
-  <app-button>Close</app-button>
+  <app-button (click)="close()">Close</app-button>
 </div>
-<div class="dialog-body">
+<div class="body">
   <app-book-form [isUpdate]="isUpdate()" (update)="onUpdate($event)"></app-book-form>
 </div>

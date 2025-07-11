@@ -1,1 +1,1 @@
-export type buttonTheme = 'base' | 'accent' | 'danger';
+export type buttonTheme = 'base' | 'accent' | 'danger' | 'success';

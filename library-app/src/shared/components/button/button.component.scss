@@ -1,7 +1,7 @@
 :host {
   .button {
     height: 32px;
-    padding-inline: 8px;
+    padding-inline: 16px;
     border-radius: 4px;
     cursor: pointer;
     transition: filter 50ms;
@@ -36,6 +36,14 @@
     .button {
       color: var(--black-0);
       background-color: var(--red-reverso-800);
+      border: none;
+    }
+  }
+
+  &.theme-success {
+    .button {
+      color: var(--black-0);
+      background-color: var(--green-800);
       border: none;
     }
   }
