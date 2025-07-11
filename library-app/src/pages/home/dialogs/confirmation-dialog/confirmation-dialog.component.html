@@ -1,0 +1,9 @@
+<p class="title tp-heading-5">{{ options().title }}</p>
+<div class="actions">
+  <app-button [theme]="options().confirmButtonTheme" (click)="onConfirm()">{{
+    options().confirmButtonText
+  }}</app-button>
+  <app-button [theme]="options().cancelButtonTheme" (click)="onCancel()">{{
+    options().cancelButtonText
+  }}</app-button>
+</div>

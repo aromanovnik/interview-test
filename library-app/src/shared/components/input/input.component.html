@@ -1,0 +1,27 @@
+<label class="label" [for]="ngControl?.name">
+  <small>
+    <ng-content></ng-content>
+    @if (isRequired()) {
+      <span class="--color-danger"> *</span>
+    }
+  </small>
+</label>
+
+<div class="app-input-group">
+  <input
+    class="app-input tp-body-1"
+    [type]="type()"
+    [id]="ngControl?.name"
+    [class.app-input--error]="isInvalid()"
+    [maxLength]="options().maxLength"
+    [min]="options().min"
+    [max]="options().max"
+    [placeholder]="options().placeholder"
+    [value]="value"
+    [disabled]="isDisabled()"
+    (input)="setValue($event)"
+    (blur)="onBlur()"
+  />
+</div>
+
+<small class="error">{{ getErrorMessage(formControl) }}</small>

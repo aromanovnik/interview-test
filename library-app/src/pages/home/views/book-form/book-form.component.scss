@@ -1,0 +1,13 @@
+:host {
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &__footer {
+      margin-top: 8px;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

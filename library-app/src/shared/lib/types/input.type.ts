@@ -1,0 +1,18 @@
+export type inputType =
+  | 'text'
+  | 'password'
+  | 'checkbox'
+  | 'radio'
+  | 'number'
+  | 'date'
+  | 'email'
+  | 'file'
+  | 'submit'
+  | 'reset'
+  | 'button'
+  | 'color'
+  | 'range'
+  | 'search'
+  | 'tel'
+  | 'time'
+  | 'url';

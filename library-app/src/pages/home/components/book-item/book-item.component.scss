@@ -1,0 +1,22 @@
+:host {
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+
+  .info {
+    .title {
+      font-weight: bold;
+    }
+
+    .caption {
+      color: var(--black-1000);
+    }
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}

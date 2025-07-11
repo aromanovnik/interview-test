@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "author": "George R.R. Martin",
+    "title": "A Game of Thrones",
+    "totalPages": 400,
+    "year": 1996
+  },
+  {
+    "id": 2,
+    "author": "Ayn Rand",
+    "title": "Atlas Shrugged",
+    "totalPages": 1168,
+    "year": 1957
+  },
+  {
+    "id": 3,
+    "author": "John R.R. Tolkien",
+    "title": "The Lord of the Rings",
+    "totalPages": 600,
+    "year": 1954
+  },
+  {
+    "id": 4,
+    "author": "Leo Tolstoy",
+    "title": "War and Peace",
+    "totalPages": 1225,
+    "year": 1867
+  },
+  {
+    "id": 5,
+    "author": "Ray Bradbury",
+    "title": "Fahrenheit 451",
+    "totalPages": 800,
+    "year": 1953
+  },
+  {
+    "id": 6,
+    "author": "Fyodor Dostoevsky",
+    "title": "Crime and Punishment",
+    "totalPages": 900,
+    "year": 1866
+  }
+]

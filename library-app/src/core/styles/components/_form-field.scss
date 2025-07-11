@@ -1,0 +1,30 @@
+.app-form-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .label {
+    display: flex;
+    justify-content: space-between;
+
+    & > small:not(:empty) {
+      margin-bottom: 4px;
+    }
+  }
+
+  .error {
+    text-align: start;
+    color: var(--red-reverso-700);
+
+    &:not(:empty) {
+      margin-top: 4px;
+    }
+  }
+
+  // Invalid state
+  &.ng-invalid.ng-touched {
+    label {
+      color: var(--red-reverso-700);
+    }
+  }
+}

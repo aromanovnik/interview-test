@@ -1,0 +1,57 @@
+@use 'mixins-media';
+
+$container-big-desktop: 1300px;
+$container-medium-desktop: 1250px;
+$container-small-desktop: 1150px;
+$container-big-tablet: 1000px;
+$container-tablet: 760px;
+$container-big-phone: 550px;
+$container-small-phone: 100%;
+$container-extra-small-phone: 100%;
+
+.app-container {
+  height: 100%;
+  margin: 0 auto;
+
+  /* above 1440 */
+  @include mixins-media.big-desktop-view {
+    width: $container-big-desktop;
+  }
+
+  /* below 1439 */
+  @include mixins-media.medium-desktop-view {
+    width: $container-medium-desktop;
+  }
+
+  /* below 1279 */
+  @include mixins-media.small-desktop-view {
+    width: $container-small-desktop;
+  }
+
+  /* below 1159 */
+  @include mixins-media.big-tablet-view {
+    width: $container-big-tablet;
+  }
+
+  /* below 1023 */
+  @include mixins-media.tablet-view {
+    width: $container-tablet;
+  }
+
+  /* below 767 */
+  @include mixins-media.big-phone-view {
+    width: $container-big-phone;
+  }
+
+  /* below 567 */
+  @include mixins-media.small-phone-view {
+    padding: 0 8px;
+    width: $container-small-phone;
+  }
+
+  /* below 375 */
+  @include mixins-media.extra-small-phone-view {
+    padding: 0 4px;
+    width: $container-extra-small-phone;
+  }
+}

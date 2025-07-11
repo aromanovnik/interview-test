@@ -1,0 +1,19 @@
+:host {
+  width: 400px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 4px;
+  background-color: var(--black-0);
+  animation-duration: 150ms;
+
+  .title {
+    text-align: center;
+  }
+
+  .actions {
+    display: flex;
+    justify-content: space-between;
+  }
+}
