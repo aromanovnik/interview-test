@@ -1,0 +1,7 @@
+<div class="dialog-header">
+  <p>{{ dialogTitle() }}</p>
+  <app-button>Close</app-button>
+</div>
+<div class="dialog-body">
+  <app-book-form [isUpdate]="isUpdate()" (update)="onUpdate($event)"></app-book-form>
+</div>

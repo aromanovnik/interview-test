@@ -1,0 +1,7 @@
+<form [formGroup]="formGroup" (ngSubmit)="onUpdate()">
+  <app-input formControlName="author">Author</app-input>
+  <app-input formControlName="title">Book title</app-input>
+  <app-input formControlName="year" type="number">Year of publication</app-input>
+  <app-input formControlName="totalPages" type="number">Number of pages</app-input>
+  <app-button type="submit">{{ buttonText() }}</app-button>
+</form>

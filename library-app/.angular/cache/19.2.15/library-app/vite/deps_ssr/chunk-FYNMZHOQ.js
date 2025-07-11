@@ -3,10 +3,12 @@ const require = createRequire(import.meta.url);
 import {
   BrowserDomAdapter,
   BrowserModule,
-  DOCUMENT,
   EVENT_MANAGER_PLUGINS,
   EventManagerPlugin,
   HTTP_ROOT_INTERCEPTOR_FNS,
+} from './chunk-CRNYI4XS.js';
+import {
+  DOCUMENT,
   NullViewportScroller,
   PLATFORM_SERVER_ID,
   PlatformLocation,
@@ -14,7 +16,7 @@ import {
   XhrFactory,
   getDOM,
   setRootDomAdapter,
-} from './chunk-XT2MVUT4.js';
+} from './chunk-HSHXRAZ3.js';
 import {
   ALLOW_MULTIPLE_PLATFORMS,
   APP_ID,
@@ -40,7 +42,6 @@ import {
   inject,
   makeEnvironmentProviders,
   platformCore,
-  require_cjs,
   setClassMetadata,
   setDocument,
   startMeasuring,
@@ -49,7 +50,8 @@ import {
   ɵɵdefineInjector,
   ɵɵdefineNgModule,
   ɵɵinject,
-} from './chunk-IIYVTTA6.js';
+} from './chunk-3YQWN6ZM.js';
+import { require_cjs } from './chunk-CYWUBJ57.js';
 import { __toESM } from './chunk-6DU2HRTW.js';
 
 // node_modules/@angular/platform-server/fesm2022/server-_br4z1cG.mjs
@@ -17603,4 +17605,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-CC2MMYVW.js.map
+//# sourceMappingURL=chunk-FYNMZHOQ.js.map

@@ -1,34 +1,58 @@
 {
-  "hash": "7865dff3",
-  "configHash": "ffc1a982",
-  "lockfileHash": "cf9f9c54",
-  "browserHash": "7a397f34",
+  "hash": "0ae5e43b",
+  "configHash": "30a3693b",
+  "lockfileHash": "6c7ae1aa",
+  "browserHash": "898def61",
   "optimized": {
+    "@angular/cdk/dialog": {
+      "src": "../../../../../../node_modules/@angular/cdk/fesm2022/dialog.mjs",
+      "file": "@angular_cdk_dialog.js",
+      "fileHash": "64f4ed9a",
+      "needsInterop": false
+    },
     "@angular/core": {
       "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "64093df0",
+      "fileHash": "545ac197",
+      "needsInterop": false
+    },
+    "@angular/forms": {
+      "src": "../../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+      "fileHash": "8a7771f7",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "c02956cf",
+      "fileHash": "0a2482c0",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "121ccddb",
+      "fileHash": "eaa489e2",
+      "needsInterop": false
+    },
+    "rxjs": {
+      "src": "../../../../../../node_modules/rxjs/dist/esm5/index.js",
+      "file": "rxjs.js",
+      "fileHash": "b39e0d25",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-KTESDR2E": {
-      "file": "chunk-KTESDR2E.js"
+    "chunk-5XV2YSS2": {
+      "file": "chunk-5XV2YSS2.js"
     },
-    "chunk-HTFLTR7X": {
-      "file": "chunk-HTFLTR7X.js"
+    "chunk-JLGN6XDL": {
+      "file": "chunk-JLGN6XDL.js"
+    },
+    "chunk-2OPCP5ZX": {
+      "file": "chunk-2OPCP5ZX.js"
+    },
+    "chunk-2QO3OHK2": {
+      "file": "chunk-2QO3OHK2.js"
     }
   }
 }
