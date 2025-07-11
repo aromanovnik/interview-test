@@ -19,6 +19,8 @@ export class BookListService {
     dialogRef.componentInstance?.update.subscribe((res) => {
       if (data) this._bookService.updateBook(data.id, res);
       else this._bookService.addBook(res);
+
+      dialogRef.close();
     });
   }
 

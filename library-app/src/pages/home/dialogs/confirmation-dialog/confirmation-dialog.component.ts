@@ -10,6 +10,9 @@ import { confirmationDialogResult } from '@pages/home/dialogs/confirmation-dialo
   imports: [ButtonComponent],
   templateUrl: './confirmation-dialog.component.html',
   styleUrl: './confirmation-dialog.component.scss',
+  host: {
+    class: 'animation-pop-out',
+  },
 })
 export class ConfirmationDialogComponent {
   public data: Partial<ConfirmationDialogOptions> = inject(DIALOG_DATA);

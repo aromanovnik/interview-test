@@ -1,6 +1,6 @@
 <ul class="list">
   @for (book of items(); track book.id) {
-    <li class="list__item">
+    <li class="list__item animation-fade-in">
       <app-book-item [data]="book"></app-book-item>
     </li>
   }

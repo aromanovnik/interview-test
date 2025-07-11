@@ -10,6 +10,9 @@ import { BookItem } from '@pages/home/components/book-item/types';
   imports: [ButtonComponent, BookFormComponent],
   templateUrl: './book-form-dialog.component.html',
   styleUrl: './book-form-dialog.component.scss',
+  host: {
+    class: 'animation-pop-out',
+  },
 })
 export class BookFormDialogComponent {
   private _dialogRef = inject(DialogRef);
